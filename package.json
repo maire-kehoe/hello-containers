@@ -8,9 +8,9 @@
     "express": "3.4.8",
     "mocha": "*",
     "should": "*",
-    "nconf":  "*",
+    "nconf": "*",
     "validator": "*",
-    "jquery":"*",
-    "request-json":"*"
+    "jquery": "*",
+    "request-json": "*"
   }
 }
