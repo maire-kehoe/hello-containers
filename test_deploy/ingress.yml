@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: hello-ingress
+spec:
+  rules:
+  - host: hello-app.otc-us-south-stage.us-south.containers.appdomain.cloud
+    http:
+      paths:
+      - backend:
+          serviceName: hello-clusterip-svc
+          servicePort: 80
+        path: /
+  tls:
+  - hosts:
+    - hello-app.otc-us-south-stage.us-south.containers.appdomain.cloud
+    secretName: otc-us-south-stage
